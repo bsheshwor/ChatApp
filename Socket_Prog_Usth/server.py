@@ -55,7 +55,7 @@ while True:
             for client_socket in clients:
                 if client_socket != notified_socket:
                     client_socket.send(user['header'] + user['data'] + message['header'] + message['data'])
-                    client_socket.send(user['header'])
+            
 
             ##handle for the exception/error sockets with:
             for notified_socket in exception_sockets:
